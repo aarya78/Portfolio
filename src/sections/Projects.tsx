@@ -93,8 +93,8 @@ const projects: Project[] = [
   technologies: ['Vite', 'Tailwind CSS', 'AppScript'],
   category: 'Vite',
   icon: <Code className="w-5 h-5" />,
-  liveUrl: 'https://library-management-system-94au.vercel.app/layouts/bookManagement.html',
-  githubUrl: 'https://github.com/aarya78/Library-Management-System',
+  liveUrl: 'https://portfolio-aarya-eta.vercel.app/',
+  githubUrl: 'https://github.com/aarya78/Portfolio',
 }
 ];
 
