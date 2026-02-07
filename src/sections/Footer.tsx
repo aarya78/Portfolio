@@ -5,7 +5,7 @@ const PremiumFooter = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [hoveredSocial, setHoveredSocial] = useState(null);
+  const [hoveredSocial, setHoveredSocial] = useState<string | null>(null);
 
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ const PremiumFooter = () => {
       setShowScrollTop(scrollTop > 400);
     };
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({
         x: (e.clientX / window.innerWidth) * 100,
         y: (e.clientY / window.innerHeight) * 100,
@@ -55,7 +55,7 @@ const PremiumFooter = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToSection = (href) => {
+  const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -279,8 +279,9 @@ const PremiumFooter = () => {
                     rel="noopener noreferrer"
                     onMouseEnter={() => setHoveredSocial(link.name)}
                     onMouseLeave={() => setHoveredSocial(null)}
-                    className="relative group opacity-0 animate-fade-in-scale"
-                    style={{ animationDelay: `${700 + index * 100}ms`, animationFillMode: 'forwards' }}
+                    className={`relative group opacity-0 animate-fade-in-scale transition-all duration-300 ${hoveredSocial === link.name ? "scale-110 text-purple-400" : ""
+                      }`}
+                    style={{ animationDelay: `${700 + index * 100}ms`, animationFillMode: "forwards" }}
                   >
                     <div className={`relative bg-gradient-to-br ${link.gradient} p-4 rounded-2xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 overflow-hidden`}>
                       {/* Shimmer effect */}

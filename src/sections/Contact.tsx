@@ -65,6 +65,11 @@ const Contact: React.FC = () => {
         mode: "no-cors",
       });
 
+      if (!form) {
+        setError("Email is required");
+        return;
+      }
+      setError(null);
 
       setIsSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
