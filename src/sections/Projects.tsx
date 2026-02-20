@@ -94,7 +94,7 @@ const projects: Project[] = [
     technologies: ['Vite', 'Tailwind CSS', 'React', 'Framer Motion', 'AppScript'],
     category: 'Business Website',
     icon: <Code className="w-5 h-5" />,
-    liveUrl: 'https://your-live-link.com/',
+    liveUrl: 'https://maruti-global-enterprises.vercel.app/',
     githubUrl: 'https://github.com/your-username/maruti-global-enterprises',
   },
   {
