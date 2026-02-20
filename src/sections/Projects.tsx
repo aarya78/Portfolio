@@ -13,7 +13,8 @@ import project1 from '../assets/svwf.png';
 import project2 from '../assets/yasvitech.png';
 import project3 from '../assets/cafeNexus.png';
 import project4 from '../assets/libraryManagement.png';
-import project5 from '../assets/portfolio.png';
+import project5 from '../assets/maruti-enterprises.png';
+import project6 from '../assets/portfolio.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,18 +85,31 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/aarya78/Library-Management-System',
   },
   {
-  id: 5,
-  title: 'Portfolio Website',
-  description: 'A modern personal portfolio showcasing projects, skills, and creative development work.',
-  longDescription:
-    'A visually rich and performance-optimized personal portfolio built using Vite and Tailwind CSS to highlight projects, skills, and professional experience. The website features smooth animations, glassmorphism UI elements, responsive layouts, and interactive sections for projects, contact, and social links. It focuses on clean design, fast loading speeds, and engaging user experience while effectively presenting personal branding, technical expertise, and creative frontend development skills.',
-  image: project5,
-  technologies: ['Vite', 'Tailwind CSS', 'AppScript'],
-  category: 'Vite',
-  icon: <Code className="w-5 h-5" />,
-  liveUrl: 'https://portfolio-aarya-eta.vercel.app/',
-  githubUrl: 'https://github.com/aarya78/Portfolio',
-}
+    id: 5,
+    title: 'Maruti Global Enterprises Website',
+    description: 'A modern and responsive business website developed for a steel trading company.',
+    longDescription:
+      'A fully responsive and professionally designed business website built for Maruti Global Enterprises, a steel trading and supply company. Developed using Vite and Tailwind CSS, the website showcases the company’s products including TMT Bars, MS Angles, Channels, Steel Plates, and MS Pipes. It features smooth animations, a clean corporate layout, mobile-optimized design, and structured sections such as Vision, Mission, Products, and Contact. The project focuses on creating a strong digital presence, improving brand credibility, and ensuring seamless user experience across all devices.',
+    image: project5,
+    technologies: ['Vite', 'Tailwind CSS', 'React', 'Framer Motion', 'AppScript'],
+    category: 'Business Website',
+    icon: <Code className="w-5 h-5" />,
+    liveUrl: 'https://your-live-link.com/',
+    githubUrl: 'https://github.com/your-username/maruti-global-enterprises',
+  },
+  {
+    id: 6,
+    title: 'Portfolio Website',
+    description: 'A modern personal portfolio showcasing projects, skills, and creative development work.',
+    longDescription:
+      'A visually rich and performance-optimized personal portfolio built using Vite and Tailwind CSS to highlight projects, skills, and professional experience. The website features smooth animations, glassmorphism UI elements, responsive layouts, and interactive sections for projects, contact, and social links. It focuses on clean design, fast loading speeds, and engaging user experience while effectively presenting personal branding, technical expertise, and creative frontend development skills.',
+    image: project6,
+    technologies: ['Vite', 'Tailwind CSS', 'AppScript'],
+    category: 'Vite',
+    icon: <Code className="w-5 h-5" />,
+    liveUrl: 'https://portfolio-aarya-eta.vercel.app/',
+    githubUrl: 'https://github.com/aarya78/Portfolio',
+  }
 ];
 
 const Projects = () => {
